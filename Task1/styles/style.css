@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap');
+
 body {
     font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
 }
 
 img {
@@ -8,15 +11,83 @@ img {
     display: block;
 }
 
-h6 {
-    font-size: 20px;
-}
-
 a,
 a:link {
     margin: 0;
     text-decoration: none;
 }
+
+/*--- HEADINGS ---*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.75rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+/*--- FONT-STYLE ---*/
+
+.display01 {
+    font-size: 160px;
+}
+
+.display02 {
+    font-size: 120px;
+}
+
+.display03 {
+    font-size: 80px;
+}
+
+.display01,
+.display02,
+.display03 {
+    line-height: 1.2;
+}
+
+.font-small {
+    font-size: 0.875rem;
+}
+
+.font-tiny {
+    font-size: 0.750rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-heavy {
+    font-weight: 900;
+}
+
 
 .container {
     width: 100%;
@@ -27,15 +98,10 @@ a:link {
 
 .container-apps {
     width: 1320px;
-    /* max-width: 1296px;
-    display: flex;
-    justify-content: center; */
 }
 
 .card-list {
     list-style: none;
-    /* margin: 0; */
-    /* padding: 0; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -48,15 +114,32 @@ a:link {
     margin: 12px;
 }
 
-.card img {
-    border-radius: 15px 15px 0px 0px;
-    object-fit: fill;
+.card-image-container {
+    /* display: inline-block; */
+    overflow: hidden;
+    /* This will make sure your image doesn't exceed the border when it scales */
+    border-radius: 16px 16px 0px 0px;
+    /* box-shadow: 0 0 0 1px #F2F2F2; */
+    /* This will be your border. Adjust as needed. */
+}
+
+.card-image-container img {
+    /* display: block; */
+    border-radius: 16px 16px 0px 0px;
+    transition: transform 300ms ease-in-out;
+}
+
+.card-image-container img:hover {
+    transform: scale(1.2);
 }
 
 .card-info {
-    padding: 20px 32px;
+    /* box-sizing: border-box; */
+    /* padding: 20px 32px; */
+    padding: 19px 31px;
     border: solid #F2F2F2;
-    border-width: 0 1px 1px 1px;
+    border-top: solid #FFFFFF;
+    border-width: 1px;
 }
 
 .tool-content {
@@ -66,36 +149,23 @@ a:link {
 
 .tool-content h6 {
     color: #020202;
-    margin: 0;
-    padding-bottom: 4px;
+    margin-bottom: 12px;
 }
 
 .tool-content p {
-    font-size: 14px;
     color: #525252;
     height: 42px;
-    margin: 0;
-    padding-top: 4px;
 }
 
 .tool-model {
-    font-size: 16px;
-    /* width: 100%; */
     display: flex;
     justify-content: space-between;
-}
-
-.f-700 {
-    font-weight: 700;
 }
 
 .tool-type {
-    font-size: 16px;
-    /* width: 100%; */
     display: flex;
     justify-content: space-between;
-    border-radius: 0px 0px 15px 15px;
-
+    border-radius: 0px 0px 16px 16px;
 }
 
 .icon-share {
