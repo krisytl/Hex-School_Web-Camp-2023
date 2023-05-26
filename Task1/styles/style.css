@@ -36,27 +36,27 @@ h6 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 48px;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 40px;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 32px;
 }
 
 h4 {
-    font-size: 1.75rem;
+    font-size: 28px;
 }
 
 h5 {
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 
 h6 {
-    font-size: 1.25rem;
+    font-size: 20px;
 }
 
 /*--- FONT-STYLE ---*/
@@ -80,11 +80,11 @@ h6 {
 }
 
 .fz-14 {
-    font-size: 0.875rem;
+    font-size: 14px;
 }
 
 .fz-12 {
-    font-size: 0.750rem;
+    font-size: 12px;
 }
 
 .fw-700 {
@@ -112,26 +112,22 @@ h6 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 }
 
 .card {
     max-width: 416px;
-    /* width: 32%; */
     margin: 12px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-image-container {
-    /* display: inline-block; */
     overflow: hidden;
     /* This will make sure your image doesn't exceed the border when it scales */
     border-radius: 16px 16px 0px 0px;
-    /* box-shadow: 0 0 0 1px #F2F2F2; */
-    /* This will be your border. Adjust as needed. */
 }
 
 .card-image-container img {
-    /* display: block; */
     transition: transform 300ms ease-in-out;
 }
 
@@ -151,9 +147,7 @@ h6 {
 .tool-content {
     display: flex;
     flex-direction: column;
-
-    /* align-items: stretch; */
-    /* new property */
+    flex-grow: 1;
 }
 
 .tool-content h6 {
@@ -163,7 +157,6 @@ h6 {
 
 .tool-content p {
     color: #525252;
-    height: 42px;
 }
 
 .tool-model {
