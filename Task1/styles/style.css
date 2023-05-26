@@ -17,6 +17,13 @@ a:link {
     text-decoration: none;
 }
 
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: black;
+}
+
 /*--- HEADINGS ---*/
 
 h1,
@@ -72,19 +79,19 @@ h6 {
     line-height: 1.2;
 }
 
-.font-small {
+.fz-14 {
     font-size: 0.875rem;
 }
 
-.font-tiny {
+.fz-12 {
     font-size: 0.750rem;
 }
 
-.font-bold {
+.fw-700 {
     font-weight: 700;
 }
 
-.font-heavy {
+.fw-900 {
     font-weight: 900;
 }
 
@@ -125,7 +132,6 @@ h6 {
 
 .card-image-container img {
     /* display: block; */
-    border-radius: 16px 16px 0px 0px;
     transition: transform 300ms ease-in-out;
 }
 
@@ -145,6 +151,9 @@ h6 {
 .tool-content {
     display: flex;
     flex-direction: column;
+
+    /* align-items: stretch; */
+    /* new property */
 }
 
 .tool-content h6 {
@@ -166,9 +175,4 @@ h6 {
     display: flex;
     justify-content: space-between;
     border-radius: 0px 0px 16px 16px;
-}
-
-.icon-share {
-    width: 24px;
-    height: 24px;
 }
